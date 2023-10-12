@@ -1,0 +1,51 @@
+@import '../layout/_grid';
+@import '_variables';
+@import '../layout/_footer';
+@import '../layout/_header';
+@import '../utilities/_placeholders';
+@import '../utilities/functions';
+@import '../pages/gallery.scss';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+     text-align: center;
+     margin: 35px 0;
+     
+}
+
+.artist-statement {
+        h2{
+         font-size: 20px;
+         font-weight: bold;
+         font-family: $font-family-style;
+         margin: 8px 0;
+         
+        }
+        
+        p {
+            font-size: 16px;
+            color: $text-color;
+            font-family: $font-family-style;
+            font-weight:300;   
+        }
+
+}
+
+.featured-photos {
+    @extend .artist-statement;
+}
+
+
+.photo-gallery {
+    @extend %flex-style;
+    
+    img{
+        width: image_wh(6)+200px;
+        height: image_wh(9)-100px;
+    }
+}
+

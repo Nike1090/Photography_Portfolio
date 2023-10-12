@@ -1,0 +1,23 @@
+@import '../base/_variables';
+@mixin nav-bar {
+    nav {
+        margin: 24px auto;
+        ul {
+         display: flex;
+         gap: 45px;
+         list-style: none;
+         li > a {
+            text-decoration: none;
+            color: $text-color;
+         }
+         a:hover {
+            border-bottom: 3px solid rgb(112, 192, 219);
+            transition: 0.1s ease;                  
+        }
+         font-size: x-large;
+         font-weight: bold;
+         font-family: $font-family-style;
+        }
+      
+}
+}

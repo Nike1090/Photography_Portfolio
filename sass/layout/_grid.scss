@@ -1,0 +1,29 @@
+@import '../base/_variables';
+@import '../components/_navbar';
+@mixin header {
+header {
+    nav {grid-area:  nav;}
+    h1 {grid-area:  h1;}
+    p  {grid-area: p;}
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "h1"
+    "p";
+    row-gap: 10px;
+    text-align: center;
+    
+    @include nav-bar;
+    }
+    h1 {font-style: italic;
+        font-family:'Times New Roman', Times, serif;
+    }
+    p {
+        font-size: large;
+        color: $text-color;
+        font-family: $font-family-style;
+        font-weight: bold;   
+    }
+}
+
+
